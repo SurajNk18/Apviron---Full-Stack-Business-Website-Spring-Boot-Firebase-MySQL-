@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Solutions — Apviron Technologies</title>
+  <meta name="description" content="Apviron Technologies provides reliable and scalable IT solutions including custom software, web applications, cloud solutions, and IT consulting.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/images/logo.jpg" alt="Apviron Technologies" class="navbar__logo-img">
+      </a>
+      
+      <div class="navbar__nav" id="navMenu">
+        <a href="index.html" class="navbar__link">Home</a>
+        <!-- About Dropdown -->
+        <div class="navbar__dropdown-parent">
+          <a href="about.html" class="navbar__link navbar__dropdown-toggle">
+            About Us <span class="dropdown-arrow">▼</span>
+          </a>
+          <div class="navbar__dropdown">
+            <a href="about.html#who-we-are"><span class="sub-icon">🏢</span> Who We Are</a>
+            <a href="about.html#our-purpose"><span class="sub-icon">🎯</span> Mission & Vision</a>
+            <a href="about.html#our-values"><span class="sub-icon">💡</span> Our Values</a>
+            <a href="about.html#partner-with-us"><span class="sub-icon">🤝</span> Partner With Us</a>
+          </div>
+        </div>
+        
+        <div class="navbar__dropdown-parent">
+          <a href="services.html" class="navbar__link navbar__dropdown-toggle">
+            Services <span class="dropdown-arrow">▼</span>
+          </a>
+          <div class="navbar__dropdown">
+            <a href="it-solutions.html"><span class="sub-icon">💻</span> IT Solutions</a>
+            <a href="mechanical.html"><span class="sub-icon">⚙️</span> Mechanical Engineering</a>
+            <a href="services.html#outsourcing"><span class="sub-icon">👥</span> Resource Outsourcing</a>
+          </div>
+        </div>
+
+        <a href="index.html#resource-outsourcing" class="navbar__link">Resource Outsourcing</a>
+        <a href="industries.html" class="navbar__link">Industries</a>
+        <a href="contact.html" class="navbar__link navbar__cta btn btn--primary btn--sm">Contact Us</a>
+      </div>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero__title">IT <span class="text-gradient">Solutions</span></h1>
+      <p class="page-hero__subtitle" style="max-width:700px; margin:var(--sp-md) auto 0;">Apviron Technologies provides reliable and scalable IT solutions to help businesses improve efficiency and digital capabilities.</p>
+      <div class="page-hero__breadcrumb">
+        <a href="index.html">Home</a> / <a href="services.html">Services</a> / <span>IT Solutions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICE CARDS ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label">Our IT Expertise</div>
+        <h2 class="section-title">Technology Services That <span>Drive Growth</span></h2>
+        <p class="section-subtitle">We build, integrate, and maintain technology platforms that empower businesses to scale confidently.</p>
+      </div>
+
+      <div class="features-grid stagger-children" style="margin-top:var(--sp-3xl)">
+
+        <!-- 1. Custom Software Development -->
+        <div class="card">
+          <div class="card__icon">🖥️</div>
+          <h3 class="card__title">Custom Software Development</h3>
+          <p class="card__text">Bespoke enterprise applications designed to solve your unique business challenges. We build with modern tech stacks including Java, .NET, Python, and Node.js — optimized for performance and maintainability.</p>
+          <ul class="card__list">
+            <li>Enterprise Resource Planning (ERP)</li>
+            <li>CRM & Workflow Automation</li>
+            <li>Data Management Platforms</li>
+          </ul>
+        </div>
+
+        <!-- 2. Web Application Development -->
+        <div class="card">
+          <div class="card__icon">🌐</div>
+          <h3 class="card__title">Web Application Development</h3>
+          <p class="card__text">Responsive, high-performance web applications with exceptional UI/UX. From single-page applications to complex multi-tenant SaaS platforms, we deliver robust web solutions.</p>
+          <ul class="card__list">
+            <li>React, Angular & Vue.js SPAs</li>
+            <li>Progressive Web Apps (PWA)</li>
+            <li>E-Commerce & Marketplace Platforms</li>
+          </ul>
+        </div>
+
+        <!-- 3. API Development and Integration -->
+        <div class="card">
+          <div class="card__icon">🔗</div>
+          <h3 class="card__title">API Development & Integration</h3>
+          <p class="card__text">Seamless REST & GraphQL API design, development, and third-party integrations. We help unify your technology ecosystem with reliable, documented, and secure APIs.</p>
+          <ul class="card__list">
+            <li>RESTful & GraphQL APIs</li>
+            <li>Payment Gateway Integration</li>
+            <li>Third-Party Service Connectors</li>
+          </ul>
+        </div>
+
+        <!-- 4. Cloud Solutions -->
+        <div class="card">
+          <div class="card__icon">☁️</div>
+          <h3 class="card__title">Cloud Solutions</h3>
+          <p class="card__text">Architecture design, cloud migration, and managed services across AWS, Azure, and GCP. We help businesses move to the cloud securely and manage infrastructure efficiently.</p>
+          <ul class="card__list">
+            <li>Cloud Migration & Strategy</li>
+            <li>DevOps & CI/CD Pipelines</li>
+            <li>Serverless & Containerization</li>
+          </ul>
+        </div>
+
+        <!-- 5. System Maintenance -->
+        <div class="card">
+          <div class="card__icon">🛠️</div>
+          <h3 class="card__title">System Maintenance & Technical Support</h3>
+          <p class="card__text">Ongoing application maintenance, performance monitoring, bug fixing, and infrastructure support. We keep your systems running smoothly with proactive 24/7 monitoring.</p>
+          <ul class="card__list">
+            <li>Application Monitoring & Alerting</li>
+            <li>Security Patches & Updates</li>
+            <li>Database Optimization</li>
+          </ul>
+        </div>
+
+        <!-- 6. IT Consulting -->
+        <div class="card">
+          <div class="card__icon">💡</div>
+          <h3 class="card__title">IT Consulting & Solution Design</h3>
+          <p class="card__text">Strategic technology consulting to align IT investments with your business goals. From system audits to digital transformation roadmaps, we guide your technology decisions.</p>
+          <ul class="card__list">
+            <li>Technology Audit & Assessment</li>
+            <li>Digital Transformation Strategy</li>
+            <li>Architecture & System Design</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLOSING CTA ========== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="text-center reveal" style="max-width:700px; margin:0 auto;">
+        <h2 class="section-title">Secure, Scalable & <span>High-Performance</span></h2>
+        <p class="section-subtitle" style="margin-bottom:var(--sp-2xl);">We focus on delivering secure, scalable, and high-performance technology solutions tailored to business needs. Every project is built with security best practices, clean architecture, and future scalability in mind.</p>
+        <div style="display:flex; gap:var(--sp-md); justify-content:center; flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn--primary btn--lg">Discuss Your Project →</a>
+          <a href="services.html" class="btn btn--outline btn--lg">← Back to Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__main">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo"><img src="assets/images/logo.jpg" alt="Apviron Technologies" class="navbar__logo-img"></a>
+          <p>Apviron is a technology and engineering solutions company delivering innovative IT services, mechanical engineering support, and resource outsourcing solutions. We help businesses improve efficiency, quality, and digital transformation through reliable and scalable solutions.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook" class="social-facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter" class="social-twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#resource-outsourcing">Resource Outsourcing</a></li>
+            <li><a href="industries.html">Industries We Serve</a></li>
+            <li><a href="about.html#our-values">Why Choose Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="it-solutions.html">Software Development</a></li>
+            <li><a href="it-solutions.html">Web & App Development</a></li>
+            <li><a href="mechanical.html">Mechanical Design & Drafting</a></li>
+            <li><a href="mechanical.html">CAD / CAE Services</a></li>
+            <li><a href="services.html#outsourcing">Resource Outsourcing</a></li>
+            <li><a href="services.html">Technical Consulting</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Industries</h4>
+          <ul class="footer__links">
+            <li><a href="industries.html">Manufacturing</a></li>
+            <li><a href="industries.html">Engineering & Design</a></li>
+            <li><a href="industries.html">Information Technology</a></li>
+            <li><a href="industries.html">Infrastructure</a></li>
+            <li><a href="industries.html">Startups & SMEs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact Us</h4>
+          <div class="footer__contact-item" style="align-items: flex-start;">
+            <span class="footer__contact-icon" style="margin-top: 4px;">📍</span>
+            <span>Shree Ganesh Tower, Unit E, Office No. 104,<br>Sector No. 4, Moshi Pradhikaran,<br>Moshi, Pune – 412105</span>
+          </div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📧</span><span><a href="mailto:info@apviron.com">info@apviron.com</a></span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📞</span><span><a href="tel:+918446341389">+91 8446 341 389</a></span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">🌐</span><span><a href="https://www.apviron.com" target="_blank">www.apviron.com</a></span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">🕐</span><span>Mon – Fri, 9 AM – 6 PM</span></div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Stay Connected</h4>
+          <p class="footer__newsletter-text">Subscribe to our updates and get the latest insights delivered to your inbox.</p>
+          <form class="footer__newsletter" id="newsletterForm">
+            <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer__bottom">
+        <p>&copy; 2026 Apviron. All Rights Reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

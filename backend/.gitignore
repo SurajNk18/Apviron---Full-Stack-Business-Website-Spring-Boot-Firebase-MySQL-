@@ -1,0 +1,25 @@
+# Apviron Backend — Git Ignore
+
+# ──── Firebase ────
+# NEVER commit your service account credentials
+firebase-service-account.json
+
+# ──── IDE ────
+.idea/
+.vscode/
+*.iml
+
+# ──── Build ────
+target/
+*.class
+*.jar
+
+# ──── Maven ────
+.mvn/wrapper/maven-wrapper.jar
+
+# ──── OS ────
+.DS_Store
+Thumbs.db
+
+# ──── Logs ────
+*.log

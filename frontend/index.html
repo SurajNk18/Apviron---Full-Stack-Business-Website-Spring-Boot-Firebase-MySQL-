@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apviron — IT & Mechanical Solutions Provider</title>
+  <meta name="description" content="Apviron delivers expert IT and mechanical engineering services, resource outsourcing, and scalable solutions tailored for businesses of all sizes.">
+  <meta name="keywords" content="Apviron, IT services, mechanical engineering, resource outsourcing, software development, CAD modeling">
+  <meta property="og:title" content="Apviron — IT & Mechanical Solutions Provider">
+  <meta property="og:description" content="Expert IT and mechanical engineering services, resource outsourcing, and scalable solutions.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%233b82f6'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Inter,sans-serif' font-weight='800' font-size='18'>A</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/images/logo.jpg" alt="Apviron Technologies" class="navbar__logo-img">
+      </a>
+      
+      <div class="navbar__nav" id="navMenu">
+        <a href="index.html" class="navbar__link">Home</a>
+        <!-- About Dropdown -->
+        <div class="navbar__dropdown-parent">
+          <a href="about.html" class="navbar__link navbar__dropdown-toggle">
+            About Us <span class="dropdown-arrow">▼</span>
+          </a>
+          <div class="navbar__dropdown">
+            <a href="about.html#who-we-are"><span class="sub-icon"><i class="fas fa-building"></i></span> Who We Are</a>
+            <a href="about.html#our-purpose"><span class="sub-icon"><i class="fas fa-bullseye"></i></span> Mission & Vision</a>
+            <a href="about.html#our-values"><span class="sub-icon"><i class="fas fa-lightbulb"></i></span> Our Values</a>
+            <a href="about.html#partner-with-us"><span class="sub-icon"><i class="fas fa-handshake"></i></span> Partner With Us</a>
+          </div>
+        </div>
+
+        <!-- Services Dropdown -->
+        <div class="navbar__dropdown-parent">
+          <a href="services.html" class="navbar__link navbar__dropdown-toggle">
+            Services <span class="dropdown-arrow">▼</span>
+          </a>
+          <div class="navbar__dropdown">
+            <a href="it-solutions.html"><span class="sub-icon"><i class="fas fa-laptop-code"></i></span> IT Solutions</a>
+            <a href="mechanical.html"><span class="sub-icon"><i class="fas fa-cogs"></i></span> Mechanical Engineering</a>
+            <a href="services.html#outsourcing"><span class="sub-icon"><i class="fas fa-users"></i></span> Resource Outsourcing</a>
+          </div>
+        </div>
+
+        <a href="#resource-outsourcing" class="navbar__link">Resource Outsourcing</a>
+        <a href="industries.html" class="navbar__link">Industries</a>
+        <a href="contact.html" class="navbar__link navbar__cta btn btn--primary btn--sm">Contact Us</a>
+      </div>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ========== HERO SLIDER ========== -->
+  <section class="hero-slider" id="heroSlider">
+    <!-- Slide 1: IT Solutions -->
+    <div class="hero-slide active">
+      <div class="hero-slide__bg" style="background-image: url('assets/images/it_solutions_banner.png');"></div>
+      <div class="hero-slide__overlay"></div>
+      <div class="container">
+        <div class="hero-slide__content">
+          <div class="hero-slide__badge">
+            <span class="dot"></span>
+            IT Solutions & Web Development
+          </div>
+          <h1 class="hero-slide__title">
+            Engineering <span>Innovation</span> for a Digital World
+          </h1>
+          <p class="hero-slide__text">
+            We deliver cutting-edge IT solutions and cloud architecture to help your business thrive in today's competitive landscape.
+          </p>
+          <div class="hero-slide__actions">
+            <a href="services.html" class="btn btn--primary btn--lg">Explore IT Services →</a>
+            <a href="contact.html" class="btn btn--outline btn--lg" style="color:#fff; border-color:rgba(255,255,255,0.3)">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Mechanical Engineering -->
+    <div class="hero-slide">
+      <div class="hero-slide__bg" style="background-image: url('assets/images/engineering_services_banner.png');"></div>
+      <div class="hero-slide__overlay"></div>
+      <div class="container">
+        <div class="hero-slide__content">
+          <div class="hero-slide__badge">
+            <span class="dot"></span>
+            Mechanical Engineering Excellence
+          </div>
+          <h1 class="hero-slide__title">
+            Precision <span>Engineering</span> Meets Innovation
+          </h1>
+          <p class="hero-slide__text">
+            Advanced CAD modeling, simulation, and manufacturing support services to bring your mechanical concepts to life.
+          </p>
+          <div class="hero-slide__actions">
+            <a href="services.html" class="btn btn--primary btn--lg">Our Expertise →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Growth -->
+    <div class="hero-slide">
+      <div class="hero-slide__bg" style="background-image: url('assets/images/business_growth_banner.png');"></div>
+      <div class="hero-slide__overlay"></div>
+      <div class="container">
+        <div class="hero-slide__content">
+          <div class="hero-slide__badge">
+            <span class="dot"></span>
+            Strategic Resource Partner
+          </div>
+          <h1 class="hero-slide__title">
+            Scale Your <span>Business</span> with Expert Resources
+          </h1>
+          <p class="hero-slide__text">
+            Flexible outsourcing models designed to provide the right talent at the right time for your enterprise growth.
+          </p>
+          <div class="hero-slide__actions">
+            <a href="#resource-outsourcing" class="btn btn--primary btn--lg">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="slider__arrow" id="sliderPrev">←</button>
+    <button class="slider__arrow" id="sliderNext">→</button>
+    <div class="slider__dots" id="sliderDots"></div>
+  </section>
+
+  <!-- ========== ABOUT PREVIEW ========== -->
+  <section class="section" id="about-preview">
+    <div class="container">
+      <div class="about-intro__grid">
+        <div class="fade-in-left">
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title">Building the Future with <span>Technology & Engineering</span></h2>
+          <p class="section-subtitle" style="margin-bottom:var(--sp-lg)">
+            Apviron Technologies is a forward-thinking solutions provider combining deep IT expertise with precision mechanical engineering. We help organizations modernize their operations, build scalable digital platforms, and optimize engineering processes.
+          </p>
+          <p style="font-size:var(--fs-sm);color:var(--clr-text-muted);line-height:1.8;margin-bottom:var(--sp-2xl)">
+            Founded on the principles of quality, transparency, and innovation, we serve clients across manufacturing, automotive, energy, and technology sectors — delivering measurable results every time.
+          </p>
+          <a href="about.html" class="btn btn--outline">Learn More About Us →</a>
+        </div>
+        <div class="fade-in-right">
+          <div class="about-intro__visual">
+            <div class="about-intro__visual-icon"><i class="fas fa-hard-hat"></i></div>
+            <h3>8+ Years of Excellence</h3>
+            <p>Combining technology and engineering expertise to deliver transformative solutions for businesses worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES OVERVIEW ========== -->
+  <section class="section section--alt" id="services-overview">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Our Core <span>Services</span></h2>
+        <p class="section-subtitle">We combine technological expertise with engineering precision to deliver comprehensive solutions across three core domains.</p>
+      </div>
+      <div class="hs-services-grid stagger-children" style="margin-top:var(--sp-3xl)">
+
+        <!-- IT Services -->
+        <div class="hs-scard">
+          <div class="hs-scard__img">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80" alt="IT professionals working on software" loading="lazy">
+            <div class="hs-scard__badge hs-scard__badge--blue">Domain 01</div>
+          </div>
+          <div class="hs-scard__body">
+            <div class="hs-scard__icon hs-scard__icon--blue"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="hs-scard__title">IT Services</h3>
+            <p class="hs-scard__text">Custom software development, web applications, cloud solutions, API integration, and ongoing technical support to power your digital transformation.</p>
+            <ul class="hs-scard__list">
+              <li>Custom Software Development</li>
+              <li>Cloud Architecture &amp; Migration</li>
+              <li>Web &amp; Mobile Applications</li>
+              <li>API Integration &amp; DevOps</li>
+            </ul>
+            <a href="services.html" class="hs-scard__link">Learn More &#8594;</a>
+          </div>
+        </div>
+
+        <!-- Mechanical Services -->
+        <div class="hs-scard">
+          <div class="hs-scard__img">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=700&q=80" alt="Mechanical engineers reviewing CAD design" loading="lazy">
+            <div class="hs-scard__badge hs-scard__badge--teal">Domain 02</div>
+          </div>
+          <div class="hs-scard__body">
+            <div class="hs-scard__icon hs-scard__icon--teal"><i class="fas fa-cogs"></i></div>
+            <h3 class="hs-scard__title">Mechanical Services</h3>
+            <p class="hs-scard__text">End-to-end mechanical engineering support from concept design through manufacturing, leveraging advanced CAD tools and industry best practices.</p>
+            <ul class="hs-scard__list">
+              <li>Design &amp; CAD Modeling</li>
+              <li>Manufacturing Support</li>
+              <li>Process Optimization</li>
+              <li>Quality Assurance</li>
+            </ul>
+            <a href="services.html" class="hs-scard__link">Learn More &#8594;</a>
+          </div>
+        </div>
+
+        <!-- Resource Outsourcing -->
+        <div class="hs-scard">
+          <div class="hs-scard__img">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80" alt="Professionals collaborating as a team" loading="lazy">
+            <div class="hs-scard__badge hs-scard__badge--orange">Domain 03</div>
+          </div>
+          <div class="hs-scard__body">
+            <div class="hs-scard__icon hs-scard__icon--orange"><i class="fas fa-users-cog"></i></div>
+            <h3 class="hs-scard__title">Resource Outsourcing</h3>
+            <p class="hs-scard__text">Flexible, scalable staffing solutions that give you access to skilled IT and engineering professionals &mdash; on demand, on budget, on time.</p>
+            <ul class="hs-scard__list">
+              <li>Dedicated Development Teams</li>
+              <li>Engineering Staff Augmentation</li>
+              <li>Project-Based Hiring</li>
+              <li>Managed Services</li>
+            </ul>
+            <a href="services.html" class="hs-scard__link">Learn More &#8594;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESOURCE OUTSOURCING SECTION ========== -->
+  <section class="outsourcing" id="resource-outsourcing">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom:var(--sp-3xl)">
+        <div class="section-label">Scalable Staffing</div>
+        <h2 class="section-title">Resource <span>Outsourcing</span></h2>
+        <p class="section-subtitle">We help businesses scale their teams quickly with qualified and experienced professionals.</p>
+      </div>
+
+      <div class="outsourcing__grid">
+        <!-- Sliding Content -->
+        <div class="outsourcing__slider" id="outsourcingSlider">
+          <div class="outsourcing-slide active">
+            <img src="assets/images/resource_outsourcing_banner.png" alt="Resource Outsourcing" class="outsourcing__image">
+            <h3>Skilled Professionals On-Demand</h3>
+            <p>Apviron Technologies provides skilled professionals to support organizations with project-based or long-term resource requirements.</p>
+            <ul class="outsourcing__list">
+              <li>IT & Software Developers</li>
+              <li>Mechanical Design Engineers</li>
+              <li>Technical Consultants</li>
+              <li>Project Support Resources</li>
+              <li>QA & Testing Experts</li>
+              <li>DevOps Professionals</li>
+            </ul>
+          </div>
+          <!-- You can add more slides here if needed -->
+        </div>
+
+        <!-- Contact & Lead Capture -->
+        <div class="outsourcing__contact">
+          <div class="outsourcing__contact-info">
+            <h3 style="margin-bottom:var(--sp-md)">Contact Us</h3>
+            <p style="font-size:var(--fs-sm); color:rgba(255,255,255,0.7); margin-bottom:var(--sp-lg)">Reach out for expert IT and mechanical solutions.</p>
+            
+            <div class="info-item">
+              <div class="info-item__icon"><i class="fas fa-envelope"></i></div>
+              <div class="info-item__text">
+                <h5>Email</h5>
+                <p>admin@apviron.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-item__icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="info-item__text">
+                <h5>Phone</h5>
+                <p>+91-8446341389</p>
+              </div>
+            </div>
+          </div>
+
+          <form action="#" class="outsourcing__form" id="outsourcingForm">
+            <div class="form-group">
+              <label for="outName">Your Full Name</label>
+              <input type="text" id="outName" placeholder="Enter name here" required>
+            </div>
+            <div class="form-group">
+              <label for="outEmail">Work Email</label>
+              <input type="email" id="outEmail" placeholder="email@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="outService">Interested In</label>
+              <select id="outService" style="width:100%; border-radius:var(--radius-sm); padding:12px; background:rgba(255,255,255,0.05); color:#fff; border:1px solid rgba(255,255,255,0.15)">
+                <option value="it">IT Professionals</option>
+                <option value="mech">Mechanical Engineers</option>
+                <option value="consulting">Technical Consulting</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block" style="margin-top:var(--sp-md)">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats__grid stagger-children">
+        <div class="stat-item">
+          <div class="stat-item__value" data-count="200">0+</div>
+          <div class="stat-item__label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__value" data-count="50">0+</div>
+          <div class="stat-item__label">Global Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__value" data-count="75">0+</div>
+          <div class="stat-item__label">Team Members</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__value" data-count="8">0+</div>
+          <div class="stat-item__label">Years of Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container footer__main">
+      <div class="footer__grid">
+
+        <!-- 1. Company Overview -->
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">
+            <img src="assets/images/logo.jpg" alt="Apviron Technologies" class="navbar__logo-img">
+          </a>
+          <p>Apviron is a technology and engineering solutions company delivering innovative IT services, mechanical engineering support, and resource outsourcing solutions. We help businesses improve efficiency, quality, and digital transformation through reliable and scalable solutions.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook" class="social-facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter" class="social-twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- 2. Quick Links -->
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#resource-outsourcing">Resource Outsourcing</a></li>
+            <li><a href="industries.html">Industries We Serve</a></li>
+            <li><a href="about.html#our-values">Why Choose Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- 3. Services -->
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html#it-services">Software Development</a></li>
+            <li><a href="services.html#it-services">Web & App Development</a></li>
+            <li><a href="services.html#mechanical-services">Mechanical Design & Drafting</a></li>
+            <li><a href="services.html#mechanical-services">CAD / CAE Services</a></li>
+            <li><a href="services.html#outsourcing">Resource Outsourcing</a></li>
+            <li><a href="services.html">Technical Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. Industries We Serve -->
+        <div>
+          <h4 class="footer__heading">Industries</h4>
+          <ul class="footer__links">
+            <li><a href="industries.html">Manufacturing</a></li>
+            <li><a href="industries.html">Engineering & Design</a></li>
+            <li><a href="industries.html">Information Technology</a></li>
+            <li><a href="industries.html">Infrastructure</a></li>
+            <li><a href="industries.html">Startups & SMEs</a></li>
+          </ul>
+        </div>
+
+        <!-- 5. Contact Information -->
+        <div>
+          <h4 class="footer__heading">Contact Us</h4>
+          <div class="footer__contact-item" style="align-items: flex-start;">
+            <span class="footer__contact-icon" style="margin-top: 4px;"><i class="fas fa-map-marker-alt"></i></span>
+            <span>Shree Ganesh Tower, Unit E, Office No. 104,<br>Sector No. 4, Moshi Pradhikaran,<br>Moshi, Pune – 412105</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon"><i class="fas fa-envelope"></i></span>
+            <span><a href="mailto:info@apviron.com">info@apviron.com</a></span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon"><i class="fas fa-phone-alt"></i></span>
+            <span><a href="tel:+918446341389">+91 8446 341 389</a></span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon"><i class="fas fa-globe"></i></span>
+            <span><a href="https://www.apviron.com" target="_blank">www.apviron.com</a></span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon"><i class="fas fa-clock"></i></span>
+            <span>Mon – Fri, 9 AM – 6 PM</span>
+          </div>
+        </div>
+
+        <!-- 6. Newsletter -->
+        <div>
+          <h4 class="footer__heading">Stay Connected</h4>
+          <p class="footer__newsletter-text">Subscribe to our updates and get the latest insights delivered to your inbox.</p>
+          <form class="footer__newsletter" id="newsletterForm">
+            <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer__bottom">
+        <p>&copy; 2026 Apviron. All Rights Reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/auth.js"></script>
+  <script type="module">
+    // Outsourcing form — saves to Firebase Firestore
+    import { db, collection, addDoc, serverTimestamp } from './assets/js/firebase-config.js';
+
+    const outForm = document.getElementById('outsourcingForm');
+    if (outForm) {
+      const msgDiv = document.createElement('div');
+      msgDiv.style.marginTop = '15px';
+      msgDiv.style.fontSize = '14px';
+      msgDiv.style.fontWeight = '600';
+      msgDiv.style.textAlign = 'center';
+      outForm.appendChild(msgDiv);
+
+      outForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const btn = this.querySelector('button[type="submit"]');
+        const originalText = btn.textContent;
+        
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+        msgDiv.textContent = '';
+        msgDiv.style.color = '';
+
+        const name = document.getElementById('outName').value.trim();
+        const email = document.getElementById('outEmail').value.trim();
+        const serviceSelect = document.getElementById('outService');
+        const service = serviceSelect.options[serviceSelect.selectedIndex].text;
+
+        try {
+          await addDoc(collection(db, 'contact_messages'), {
+            name: name,
+            email: email,
+            subject: 'Resource Outsourcing Inquiry',
+            message: 'Interested in hiring for: ' + service,
+            isRead: false,
+            createdAt: serverTimestamp()
+          });
+
+          msgDiv.style.color = '#10b981';
+          msgDiv.textContent = 'Inquiry sent successfully! We will contact you shortly.';
+          outForm.reset();
+        } catch (err) {
+          console.error('Submission Error:', err);
+          msgDiv.style.color = '#ef4444';
+          msgDiv.textContent = 'Failed to submit inquiry. Please try again or email us directly.';
+        } finally {
+          btn.textContent = originalText;
+          btn.disabled = false;
+        }
+      });
+    }
+  </script>
+</body>
+</html>
