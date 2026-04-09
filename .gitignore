@@ -1,0 +1,7 @@
+backend/apache-maven-3.9.6/
+backend/target/
+node_modules/
+.env
+*.log
+.vscode/
+.idea/
